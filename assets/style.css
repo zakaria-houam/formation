@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+:root{
+    --first-color : #002962;
+    --second-color:#004e89;
+    --third-color:#ff002b;
+    --fourth-color : #800016;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.home{
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.6)), url(./images/man-working-out-with-dumbbells-in-gym.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--first-color);
+    height: 50px;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+.logo h1{
+    color: var(--third-color);
+    font-weight: bolder;
+}
+.nav ul li a{
+    color: white;
+}
+.nav ul li a:hover{
+    border-bottom: 1px solid var(--third-color);
+}
+.home .center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 100px;
+}
+.home .center h1{
+    color: white;
+    font-size: 60px;
+}
+.home .center p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 15px 0;
+    font-weight: 100;
+}
+.home .center .btn1{
+    background-color: var(--third-color);
+    color: white;
+    padding: 5px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.home .center .btn1:hover{
+    opacity: .9;
+}
+.home .center .btn2{
+    border: 2px solid var(--third-color);
+    padding: 5px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: var(--third-color);
+    margin-left: 20px;
+}
+.home .center .btn2:hover{
+    background-color: var(--third-color);
+    color: white;
+}
+.offers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+.section-title{
+    font-size: 40px;
+    border-bottom: 2px solid var(--fourth-color);
+}
+.ffrs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 0 10px;
+    margin-top: 20px;
+}
+.ffr{
+    background: var(--second-color);
+    width: 400px;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 8px;
+    color: white;
+}
+.ffr i{
+    font-size: 40px;
+}
+.ffr p{
+    text-align: center;
+}
